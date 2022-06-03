@@ -1,5 +1,6 @@
 import { Navigate, useRoutes } from 'react-router-dom'
 import App from './pages/App'
+import Product from './pages/Product'
 
 const Paths = () => {
   const element = useRoutes([
@@ -10,6 +11,10 @@ const Paths = () => {
     {
       path: '/products',
       element: <App />
+    },
+    {
+      path: '/:id',
+      element: <Product />
     },
     {
       path: '/404',

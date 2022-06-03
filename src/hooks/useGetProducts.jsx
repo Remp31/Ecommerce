@@ -10,7 +10,6 @@ const useGetProducts = (id = '') => {
     const setData = async () => {
       try {
         const { data: products } = await getProducts(id)
-        console.log(products)
         setListProducts(id ? products[0] : products)
       } catch ({ message }) {
         setError(message)
