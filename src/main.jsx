@@ -1,11 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
+import { BrowserRouter } from 'react-router-dom'
 // styles
 import './styles/index.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 // componentes
 // Router
 import Paths from './routes'
-import { BrowserRouter } from 'react-router-dom'
 
 // Context Provider
 import { ContextProvider } from './context'
