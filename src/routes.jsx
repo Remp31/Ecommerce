@@ -1,4 +1,5 @@
 import { Navigate, useRoutes } from 'react-router-dom'
+import SearchBox from './components/Searchbox'
 import App from './pages/App'
 import Product from './pages/Product'
 
@@ -26,7 +27,11 @@ const Paths = () => {
     }
   ])
 
-  return element
+  return element 
+    //(
+    //<SearchBox />,
+    //{ element }
+    //)
 }
 
 export default Paths

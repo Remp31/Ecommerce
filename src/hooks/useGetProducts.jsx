@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import getProducts from '../services'
 
 const useGetProducts = (id = '') => {
-  const [listProducts, setListProducts] = useState(id ? {} : [])
+  const [listProducts, setListProducts] = useState([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
 
@@ -10,7 +10,7 @@ const useGetProducts = (id = '') => {
     const setData = async () => {
       try {
         const { data: products } = await getProducts(id)
-        setListProducts(id ? products[0] : products)
+        setListProducts(products)
       } catch ({ message }) {
         setError(message)
       } finally {

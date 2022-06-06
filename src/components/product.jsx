@@ -4,7 +4,7 @@ import useGetProducts from '../hooks/useGetProducts'
 
 const Products = () => {
   const { query } = useAppContext()
-  const { listProducts, loading, error } = useGetProducts()
+  const { listProducts, loading, error } = useGetProducts(query)
 
   if (error) return <p>{Error}</p>
   if (loading) return <p>Loading</p>

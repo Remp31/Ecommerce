@@ -5,9 +5,9 @@ import { BrowserRouter } from 'react-router-dom'
 import './styles/index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // componentes
+import SearchBox from './components/Searchbox'
 // Router
 import Paths from './routes'
-
 // Context Provider
 import { ContextProvider } from './context'
 
@@ -18,6 +18,7 @@ container.render(
   <StrictMode>
     <ContextProvider>
       <BrowserRouter>
+        <SearchBox />
         <Paths />
       </BrowserRouter>
     </ContextProvider>
