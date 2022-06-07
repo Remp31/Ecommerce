@@ -1,6 +1,8 @@
 import { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import useAppContext from '../hooks/useAppContext'
+import '../styles/Searchbox.css'
+import '../assets/perfil.svg'
 
 const SearchBox = () => {
     const searchRef = useRef()
@@ -16,16 +18,22 @@ const SearchBox = () => {
     }
 
     return (
-    <nav className='navbar navbar-light bg-light'>
-    <div className='container-fluid'>
-        <Link className='navbar-brand' to='/products'>Productos</Link>
-        <form className='d-flex' onSubmit={handleSubmit}>
-            <input ref={searchRef} className='form-control me-2' type='search' placeholder='Busca productos' aria-label='Search' />
-            <button className='btn btn-outline-success' type='submit'>Ir</button>
-        </form>
-        <button className='btn btn-outline-success' type='submit'>Carrito</button>
-        <button className='btn btn-outline-success' type='submit'>Perfil</button>
-    </div>
+    <nav className='navbar navbar-light search'>
+        <div className='container-fluid'>
+            { /*<Link className='navbar-brand' to='/products'>Productos</Link> */}
+            <form className='d-flex buscador' onSubmit={handleSubmit}>
+                <input ref={searchRef} className='form-control me-2 input' type='search' placeholder='QUE DESEA PEDIR' aria-label='Search' />
+                <button className='btn btn-outline-success btn-buscar' type='submit'>
+                    <img src="./assets/perfil.svg" alt="buscar" />
+                </button>
+            </form>
+            <button className='btn btn-outline-success btn-compras' type='submit'>
+                <img src="./assets/bolsa_compra.svg" alt="compras"/>
+            </button>
+            <button className='btn btn-outline-success btn-perfil' type='submit'>
+                <img src="./assets/perfil.svg" alt="perfil"/>
+            </button>
+        </div>
     </nav>
     )
 }

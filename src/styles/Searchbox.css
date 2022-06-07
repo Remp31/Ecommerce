@@ -1,0 +1,46 @@
+.search{
+    left: 15%;
+    background: #D08673;
+    width: 85%;
+    height: 100%;
+    position: absolute;
+}
+
+.buscador {
+    border-color: blue;
+}
+
+.input {
+    position: absolute;
+    width: 85%;
+    height: 60px;
+    top: 10px;
+    left: 0%;
+
+    background: rgba(248, 237, 209, 0.8);
+    border-radius: 15px;
+    text-align: left;
+}
+
+.btn-buscar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1150px;
+    top: 20px;
+}
+.btn-compras{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1250px;
+    top: 10px;
+}
+
+.btn-perfil {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1340px;
+    top: 10px;
+}

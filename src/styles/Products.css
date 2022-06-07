@@ -1,0 +1,10 @@
+.prod-home{
+    position: absolute;
+    width: 83%;
+    height: 87%;
+    left: 268px;
+    top: 13%;
+
+    background: rgba(248, 237, 209, 0.82);
+    border-radius: 54px;
+}

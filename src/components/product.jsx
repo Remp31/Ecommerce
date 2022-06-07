@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import useAppContext from '../hooks/useAppContext'
 import useGetProducts from '../hooks/useGetProducts'
+import '../styles/Products.css'
 
 const Products = () => {
   const { query } = useAppContext()
@@ -10,7 +11,7 @@ const Products = () => {
   if (loading) return <p>Loading</p>
 
   return (
-    <section className='row py-5 gy-4'>
+    <section className='row py-4 gy-3 prod-home'>
       {listProducts.map((index, key) => (
         <div key={key} className='col-12 col-sm-6 col-md-6 col-lg-3 card' >
           <article className='card'>
