@@ -1,0 +1,26 @@
+.NavBar{
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+
+    background: #D08673;
+}
+
+.menu {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 30%;
+    background: #D08673;
+}
+
+.options {
+    background: #D08673;
+    border-color: #D08673;
+    border-radius: 30px;
+    color: white;
+    text-align: right;
+    font-size: 14px;
+}

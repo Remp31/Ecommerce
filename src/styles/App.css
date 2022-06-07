@@ -1,3 +1,9 @@
 .App {
   text-align: center;
 }
+
+.products{
+  width: 85%;
+  left: 100px;
+  position: relative;
+}

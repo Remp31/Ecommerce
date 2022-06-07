@@ -5,7 +5,7 @@ import SearchBox from '../components/Searchbox'
 function App () {
   return (
     <>
-      <div className='App container'>
+      <div className='container products'>
         <Products />
       </div>
     </>

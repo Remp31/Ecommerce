@@ -10,6 +10,7 @@ import SearchBox from './components/Searchbox'
 import Paths from './routes'
 // Context Provider
 import { ContextProvider } from './context'
+import NavBar from './components/NavBar'
 
 const root = document.getElementById('root')
 const container = createRoot(root)
@@ -18,6 +19,7 @@ container.render(
   <StrictMode>
     <ContextProvider>
       <BrowserRouter>
+        <NavBar />
         <SearchBox />
         <Paths />
       </BrowserRouter>
