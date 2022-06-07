@@ -8,3 +8,40 @@
     background: rgba(248, 237, 209, 0.82);
     border-radius: 54px;
 }
+
+.prod{
+    width: 260px;
+    height: 300px;
+    left: 10px;
+    top: 12px;
+    border-radius: 30px;
+}
+
+.img-prod{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    top: 20px;
+    left: 10%;
+    position: relative;
+    background-color: white;
+}
+
+.name-prod{
+    font-size: 20px;
+    text-align: center;
+    top: 17px;
+}
+
+.det-prod{
+    position: absolute;
+    width: 230px;
+    height: 42.05px;
+    left: 12px;
+    top: 245px;
+    text-align: center;
+    font-size: 25px;
+
+    background: rgba(255, 200, 112, 0.53);
+    border-radius: 10px;
+}
